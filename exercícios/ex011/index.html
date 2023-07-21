@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--<picture> é usado para exibir diferentes imagens com base nas características do dispositivo.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--type vai indicar o tipo da imagem que usamos.-->
+        <!--srcset vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido.-->
+        <!--media indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset.-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Lawrence - TrackTribe.mp3" controls></audio>
+    <!--<preload> indica se o aúdio será pré-carregado ou não e aceita três valores.-->
+    <!--metadata vai carregar apenas as informações sobre o arquivo.-->
+    <!--none não vai carregar absolutamente nada até que o usuário clique no botão play.-->
+    <!--auto vai carregar o arquivo de áudio por inteiro assim que a página for carregada.-->
+    <audio preload="metadata" controls autoplay loop>
+    <!--controls vai apresentar o player na tela. Tem que ser colocado na tag audio.-->
+    <!--autoplay, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.-->
+    <!--loop vai fazer com que o áudio seja repetido eternamente-->
+        <source src="midia/Lawrence - TrackTribe.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

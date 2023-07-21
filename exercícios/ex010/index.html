@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--target="_blank" é usado em um link HTML para abrir o destino em uma nova janela ou guia do navegador. -->
+    <!--rel="external" indica que o link leva a um recurso externo ao site atual.-->
+    <p>Você pode acessar o meu <a href="" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="" target="_blank" rel="external">canal gratuito no Youtube</a></p>
+    <h2>Usando links internos</h2>
+    <!--rel="next" é usado em um link HTML para indicar que ele leva à próxima página em uma sequência de conteúdo paginado.-->
+    <p>Esta é a primeira página do site, essa é à minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <!--target="_self" é usado em um link HTML para abrir o destino na mesma janela ou guia em que o link foi clicado.-->
+    <p>Acesse nossa <a href="notícias/página003.html" target="_self">página de notícias</a></p>
+    <h1>Links para downloads</h1>
+    <ul>
+        <!--downloads="" permite especificar um nome personalizado para o arquivo durante o download.-->
+        <!--type="application/pdf" especifica o tipo de arquivo como PDF.-->
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
